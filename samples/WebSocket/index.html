@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fujitsu Learning Media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>WebSocket Sample</title>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <strong class="text-white">WebSocket Sample</strong>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">WebSocket Sample</h1>
+                    <p class="lead">名前とメッセージを入力してみんなと情報共有しよう。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <form class="form-inline" id="fm">
+                    <div class="form-group row">
+                        <label for="nameTxt" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nameTxt">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="messageTxt" class="col-sm-2 col-form-label">Message</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="messageTxt">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <main class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Message</th>
+                        </tr>
+                    </thead>
+                    <tbody id="messageBody">
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container border-top">
+            <p>&copy;Fujitsu Learning Media Limited</p>
+        </div>
+    </footer>
+    <script src="./samples/WebSocket/client.js"></script>
+</body>
+</html>

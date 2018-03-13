@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fujitsu Learning Media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>WebRTC Sample</title>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <strong class="text-white">WebRTC</strong>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">WebRTC Sample</h1>
+                    <p class="lead">同一ページを閲覧しているユーザの動画と音声をブラウザ上に表示します。クライアントライブラリとしてsimplewebrtcを使用しています。simplewebrtcはICEサーバも提供しています。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <main>
+                <div class="col-sm-6">
+                    <video height="300" id="localVideo"></video>
+                </div>
+                <div class="col-sm-6">
+                    <div id="remotesVideos"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container border-top">
+            <p>&copy;Fujitsu Learning Media Limited</p>
+        </div>
+    </footer>
+    <script src="https://simplewebrtc.com/latest-v2.js"></script>
+    <script src="./samples/WebRTC/client.js"></script>
+</body>
+</html>

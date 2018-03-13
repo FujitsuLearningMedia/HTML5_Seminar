@@ -1,16 +1,23 @@
-# HTML5_Seminar_20180325
-3/25（日）開催「HTML5プロフェッショナル認定試験　レベル1ポイント解説無料セミナー」配布用データ。
+# HTML5プロフェッショナル認定試験レベル1ポイント解説無料セミナー
 
-## セットアップ手順
-1. 画面中央右の「Clone or Download」から、「Download ZIP」を選択
-1. ダウンロードしたzipファイルを解凍し、Cドライブ直下に格納
-1. HTML5-demo-masterを右クリックし、「Open with Code」を選択
-1. 画面左端の一番下のアイコンをクリックして、「Preview on Web Server」と検索
-1. Preview on Web ServerをインストールしVisual Studio Codeを再起動
+### 説明
+2018年3月25日開催の**HTML5プロフェッショナル認定試験レベル1ポイント解説無料セミナー**用のサンプルコードです。セミナーで使用したハンズオンを手元で試してみたい方は本リポジトリをダウンロードして使用してください。
 
-## ツール
-- Firefox
-- Visual Stduio Code
+### セットアップ手順
+1. [Node.js](https://nodejs.org/en/)をインストールする
+1. 本ページの「Clone or Download」から、「Download ZIP」を選択する
+1. ダウンロードしたzipファイルを解凍する
+1. コマンドプロンプトで解答したフォルダに移動する
+1. コマンドプロンプトに`npm install`と入力する
 
-### Visual Studio Codeで使用する拡張機能
-- Preview on Web Server
+### サンプルの動作確認方法
+1. cmd上で各サンプルが格納されているフォルダに移動する
+1. cmd上で`node server.js`コマンドを実行する
+1. ブラウザで[http://localhost:8000/](http://localhost:8000/)にアクセスする
+1. cmdを閉じてWebサーバを停止する
+
+### ライセンス
+[MIT License](LICENSE)
+
+---
+*&copy;Fujitsu Learning Media Limited*

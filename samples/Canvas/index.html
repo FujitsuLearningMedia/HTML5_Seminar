@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fujitsu Learning Media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Canvas Sample</title>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <strong class="text-white">Canvas</strong>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Canvas Sample</h1>
+                    <p class="lead">Canvasを用いたドローイングツールです。Canvas上でクリックしながらドラッグしている間だけ線を描画します。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <main class="col-sm-12">
+                <canvas id="testCanvas" width="900" height="500"></canvas>
+                <br>
+                <input type="button" id="drawBtn" value="ドロー">
+                <input type="button" id="eraserBtn" value="消しゴム">
+                <input type="color" id="colorBtn">
+                <input type="button" id="clearBtn" value="すべてクリア">
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container border-top">
+            <p>&copy;Fujitsu Learning Media Limited</p>
+        </div>
+    </footer>
+    <script src="./samples/Canvas/client.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fujitsu Learning Media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>XMLHttpRequest Sample</title>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <strong class="text-white">XMLHttpRequest Sample</strong>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">XMLHttpRequest Sample</h1>
+                    <p class="lead">入力した数値の階乗を行います。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <form class="form-inline" id="fm">
+                    <div class="form-group row">
+                        <label for="numberTxt" class="col-sm-2 col-form-label">数値</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="numberTxt">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <main class="col">
+                <div class="card">
+                    <div class="card-header">
+                        計算結果
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title" id="result"></h4>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container border-top">
+            <p>&copy;Fujitsu Learning Media Limited</p>
+        </div>
+    </footer>
+    <script src="./samples/XMLHttpRequest/client.js"></script>
+</body>
+</html>

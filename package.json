@@ -1,0 +1,28 @@
+{
+  "name": "html5_lv1_seminor_20180325",
+  "version": "1.0.0",
+  "description": "HTML5プロフェッショナル認定試験レベル1ポイント解説無料セミナーのサンプルコードです。",
+  "repository": "fogefoge",
+  "keywords": [
+    "HTML5",
+    "HTML5 exam",
+    "LPI-Japan",
+    "LPI",
+    "FLM",
+    "Fujitsu Learning Media",
+    "Shoeisha",
+    "SE"
+  ],
+  "author": "Fujitsu Learning Media",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.11.0",
+    "@types/node": "^9.3.0",
+    "@types/ws": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "ws": "^4.0.0"
+  }
+}
