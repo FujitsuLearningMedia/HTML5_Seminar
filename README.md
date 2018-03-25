@@ -16,6 +16,10 @@
 1. ブラウザで[http://localhost:8000/](http://localhost:8000/)にアクセスする
 1. cmdを閉じてWebサーバを停止する
 
+### 参考ページ
+- [LPI-Japan告知ページ](http://html5exam.jp/news/page2708.html)
+- [翔泳社書籍紹介ページ](http://www.shoeisha.co.jp/book/detail/9784798154619)
+
 ### ライセンス
 [MIT License](LICENSE)
 
