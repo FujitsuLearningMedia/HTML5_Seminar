@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<script>
+//変数storageにlocalStorageを格納
+var storage = localStorage;
+
+//データを保存する
+function set() {
+  var k = document.getElementById("k").value;
+  var v = document.getElementById("v").value;
+  storage.setItem(k, v);
+  show_result();
+}
+
+//データをクリアする
+function cle() {
+  storage.clear();
+  show_result();
+}
+
+//保存されているデータをリスト表示する
+function show_result() {
+  var result = "";
+  //保存されているデータの数だけループ
+  for(var i=0; i<storage.length; i++){
+    //i番目のキーを取得
+    var k = storage.key(i);
+    //キーと値をコロン（：）区切りのテキストにする
+    result += k + "：" + storage.getItem(k) + "<br>";
+  }
+  //上のループで作成されたテキストを表示する
+  document.getElementById("show_result").innerHTML = result;
+}
+</script>
+<title>localStorageサンプル</title>
+</head>
+<body>
+<h1>localStorageサンプル</h1>
+<p>
+キー：<input id="k" type="text">
+値：<input id="v" type="text">
+<input type="button" value="ストレージに保存" onClick="set()">
+</p>
+<p>
+<div id="show_result"></div>
+<input type="button" value="ストレージをクリア" onClick="cle()">
+</p>
+<input type="button" value="ストレージを見る" onClick="show_result()">
+</body>
+</html>

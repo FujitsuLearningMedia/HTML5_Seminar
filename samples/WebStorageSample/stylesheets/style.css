@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/*h1要素 見出し1*/
+h1 {
+  color:#ffffff;
+  background-color: #6699ff;
+  font-size:1.25em;
+  margin:5px;
+  padding:5px;
+  border-left: 15px solid #3366ff;
+  
+  /*CSS3*/
+  border-radius:10px 10px;
+  box-shadow:4px 4px #999999;
+}
+/*h2要素 見出し2*/
+h2 {
+  margin:5px;
+  padding:5px;
+  border-bottom:3px solid #3366ff;
+  font-size:1.25em; 
+  padding:5px;
+}
+/*h3要素 見出し3*/
+h3 {
+  font-size:1em; /*3.5.3*/
+  margin:5px; /*3.6.1*/
+  padding:2px; /*3.6.2*/
+  border-left:10px solid #66cc99; /*3.6.3*/
+  border-bottom:1px solid #66cc99; /*3.6.3*/
+}
+
+p {
+margin:15px;
+}
+
+/*table要素　テーブル*/
+table {
+margin: 10px;
+border-spacing: 0px;
+}
+
+th {
+background-color: #9900ff;
+color: #ffffff;
+padding: 5px;
+border: 1px solid #999999;
+}
+
+td {
+padding: 5px;
+border: 1px solid #999999;
+}
+
+/*ページ全体の設定*/
+#content {
+  margin-right:auto;
+  margin-left:auto;
+  width:600px; 
+}
+
+/*pre要素　ソースコード*/
+pre {
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+}
